@@ -1,9 +1,9 @@
 import PropTypes from "prop-types"
 
-export default function Snake(props) { 
+export default function Snake({ snakeDots }) { 
     return ( 
         <div> 
-            {props.snakeDots.map((dot, i) => { 
+            {snakeDots.map((dot, i) => { 
                 const style = { 
                     left: `${dot[0]}%`, 
                     top: `${dot[1]}%`, 
@@ -15,5 +15,5 @@ export default function Snake(props) {
 }
 
 Snake.propTypes = {
-  props: PropTypes.array
+  snakeDots: PropTypes.array.isRequired,
 }
