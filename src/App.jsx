@@ -12,7 +12,7 @@ const App = () => {
       <Games/>
       <Value />
       <Footer />
-      <SnakeGame2 />
+      <SnakeGame />
     </div>
   )
 }
