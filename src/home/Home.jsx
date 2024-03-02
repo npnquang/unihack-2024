@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
- const Home = () => {
+import {useEffect} from "react";
+const Home = () => {
   useEffect(() => {
     document.title = "Home";
   }, []);
