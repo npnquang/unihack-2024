@@ -54,7 +54,7 @@ class Game extends Component{
     render(){
         const {playerVal, computerVal, playerScore, compScore} = this.state;
         return(
-            <div className="container">
+            <div className="container text-center">
                 <h1>Welcome to Rock, Paper, Scissors Game</h1>
                 <div >
                     <button  className="text-black mx-2" onClick={()=>this.decision("ROCK")}>
@@ -67,11 +67,11 @@ class Game extends Component{
                         <i className={`fas fa-hand-scissors`} />  Scissors 
                     </button>
                 </div>
-                <div className="content">
-                    <p className="bg-slate-950">Your choice: {playerVal}</p>
-                    <p>Computer&apos;s choice: {computerVal}</p>
-                    <h2>Your Score:{playerScore}</h2>
-                    <h2>Computer Score: {compScore}</h2>
+                <div className="content mx-2">
+                    <p className="text-center">Your choice: {playerVal}</p>
+                    <p className="text-center">Computer&apos;s choice: {computerVal}</p>
+                    <h2 className="text-center">Your Score:{playerScore}</h2>
+                    <h2 className="text-center">Computer Score: {compScore}</h2>
                 </div>
             </div>
         )
