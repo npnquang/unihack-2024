@@ -9,6 +9,7 @@ const Data = [
   description: 'A simple game of tic tac toe',
   category: 'Entertainment, Puzzle',
   game_provider: 'npnq',
+  route: '/tictactoe'
   },
   {
     id: 2,
@@ -16,10 +17,11 @@ const Data = [
   description: 'A simple game of tic tac toe',
   category: 'Entertainment, Puzzle',
   game_provider: 'khn',
+  route: '/snake'
   },
   {
     id: 3,
-    name: 'puzzle Game',
+    name: 'Puzzle Game',
     description: 'A simple game of tic tac toe',
     category: 'Entertainment, Puzzle',
     game_provider: 'arnav',
@@ -30,6 +32,7 @@ const Data = [
     description: 'A simple game of tic tac toe',
     category: 'Entertainment, Puzzle',
     game_provider: 'ntnd',
+    route: "/pacman"
   }  
 ]
 
@@ -39,7 +42,7 @@ const Games = () => {
       <div className=' GamesContainer flex gap-10 justify-center flex-wrap 
       items-center py-10'>
        {
-        Data.map(({id, name, description, category, game_provider, type}) => {
+        Data.map(({id, name, description, category, game_provider, route}) => {
           return(
               <div key={id} className='group group/item singleGames w-[250px] p-[20px] bg-white rounded[10px]
               hover:bg-blue-600 shadow-lg shadow-greyC-400/700 hover:shadow-lg cursor-pointer'>
@@ -54,8 +57,11 @@ const Games = () => {
             <p className='text-[13px] text-[#959595] pt-[20px] boarder-t-[2px] mt-[20px] group-hover:text-white'>
               {description}
             </p>
-            <button className='border-[2px] rounded-[10px] block p-[10px] w-full text-[15px] font-semibold
-            text-textColor hover:bg-slate-300 group-hover/item:text-textColor group-hover:text-grey'>Play Now</button>
+            <a href={route}>
+              <button className='border-[2px] rounded-[10px] block p-[10px] w-full text-[15px] font-semibold
+              text-textColor hover:bg-slate-300 group-hover/item:text-textColor group-hover:text-grey'>Play Now</button>
+            </a>
+            
           </div>
           )
         })
