@@ -1,19 +1,18 @@
-import NavBar from "./components/navbar/NavBar"
-import Search from "./components/searchdiv/Search"
-import Games from "./components/gamediv/Games"
-import Footer from "./components/footer/Footer"
-import Value from "./components/value/Value"
-import SnakeGame from "./components/Snake/SnakeGame"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./home/Home";
+import SnakeGame from "./components/snake/SnakeGame";
+import TicTacToe from "./components/tictactoe/TicTacToe";
 const App = () => {
   return (
-    <div className="w-[85%] m-auto bg-slate-50">
-      <NavBar />
-      <Search />
-      <Games/>
-      <Value />
-      <Footer />
-      <SnakeGame />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/snake" element={<SnakeGame />}/>
+        <Route path="/tictactoe" element={<TicTacToe />}/>
+
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
 export default App
