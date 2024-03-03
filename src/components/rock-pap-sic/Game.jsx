@@ -58,18 +58,18 @@ class Game extends Component{
             <div className="container">
                 <h1>Welcome to Rock, Paper, Scissors Game</h1>
                 <div >
-                    <button onClick={()=>this.decision("ROCK")}>
+                    <button  className="text-black mx-2" onClick={()=>this.decision("ROCK")}>
                         <i className={`fas fa-hand-rock`} /> Rock
                     </button>
-                    <button onClick={()=>this.decision("PAPER")}>
+                    <button className="text-black mx-2"  onClick={()=>this.decision("PAPER")}>
                         <i className={`fas fa-hand-paper`} /> Paper
                     </button>
-                    <button onClick={()=>this.decision("SCISSORS")}>
+                    <button className="text-black mx-2"  onClick={()=>this.decision("SCISSORS")}>
                         <i className={`fas fa-hand-scissors`} />  Scissors 
                     </button>
                 </div>
                 <div className="content">
-                    <p>Your choice: {playerVal}</p>
+                    <p className="bg-slate-950">Your choice: {playerVal}</p>
                     <p>Computer&apos;s choice: {computerVal}</p>
                     <h2>Your Score:{playerScore}</h2>
                     <h2>Computer Score: {compScore}</h2>
