@@ -16,7 +16,7 @@ const Footer = () => {
           </h1>
         </div>
         <p className='text-white pb-[13px] opacity-70 leading-7'>
-          The Dev Team  pay our respects to their Elders, past and present.
+          The Dev Team pays our respects to the Elders, past and present.
         </p>
       </div>
       <div className='grid'>
@@ -47,7 +47,7 @@ const Footer = () => {
         </span>
         <div className='grid gap-2'>
           <li className='text-white opacity-[.7] hover:opacity-[1]'>Events</li>
-          <li className='text-white opacity-[.7] hover:opacity-[1]'>Feedbacks</li>
+          <li className='text-white opacity-[.7] hover:opacity-[1]'>Feedback</li>
           <li className='text-white opacity-[.7] hover:opacity-[1]'>Emails</li>
         </div>
       </div>
@@ -57,7 +57,7 @@ const Footer = () => {
         </span>
         <div>
           <small className='text-[14px] text-white'>
-            1234 Street Name, City Name, Australia
+            Wellington Road, Clayton VIC 3800
           </small>
           <div className='icons flex gap-4 py-[1rem]'>
             <AiFillInstagram className='text-white text-[30px] hover:text-[#e4405f] cursor-pointer'/>
