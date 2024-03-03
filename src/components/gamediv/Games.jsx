@@ -1,4 +1,3 @@
-import React from 'react'
 import { GiTicTacToe } from "react-icons/gi";
 
 // list all games called data
