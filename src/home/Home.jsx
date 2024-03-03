@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 import Value from "../components/value/Value";
 export default function Home() {
   return (
-    <div className="w-[100%] m-auto bg-slate-50">
+    <div className="w-[100%]  m-auto bg-slate-50">
       <NavBar />
       <Search />
       <Games/>
