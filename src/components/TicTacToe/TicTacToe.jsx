@@ -14,7 +14,7 @@ function calculateWinner(squares) {
   ];
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+    if (squares[a] !== " " && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }
   }
@@ -26,7 +26,7 @@ function calculateWinner(squares) {
 
 
 export default function TicTacToe() {
-  const [history, setHistory] = useState([Array(9).fill(null)]);
+  const [history, setHistory] = useState([Array(9).fill(" ")]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0
   const currentSquares = history[currentMove];
@@ -66,7 +66,7 @@ export default function TicTacToe() {
   });
 
   return (
-    <div className="game">
+    <div className="game flex gap-2 justify-between w-[70%] place-self-center">
       <div className="status">{status}</div>
 
       <div className="game-board">
