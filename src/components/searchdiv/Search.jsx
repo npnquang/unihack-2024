@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiOutlineSearch, AiOutlineCloseCircle } from 'react-icons/ai';
 import { FaPerson } from "react-icons/fa6";
 
