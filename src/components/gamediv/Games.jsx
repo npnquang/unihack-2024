@@ -24,6 +24,7 @@ const Data = [
     description: 'A simple game of tic tac toe',
     category: 'Entertainment, Puzzle',
     game_provider: 'arnav',
+    route: '/rpsgame'
   },
   {
     id: 4,
