@@ -6,7 +6,7 @@ import Value from "./components/value/Value"
 import SnakeGame from "./components/Snake/SnakeGame"
 const App = () => {
   return (
-    <div className="w-[85%] m-auto bg-slate-50">
+    <div className="w-[100%] m-auto bg-slate-50">
       <NavBar />
       <Search />
       <Games/>
