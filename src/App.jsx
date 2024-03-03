@@ -5,14 +5,16 @@ import TicTacToe from "./components/TicTacToe/TicTacToe";
 import Rpsgame from "./components/rock-pap-sic/Rpsgame";
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/snake" element={<SnakeGame />}/>
-        <Route path="/tictactoe" element={<TicTacToe />}/>
-        <Route path="/rpsgame" element={<Rpsgame />}/>
-      </Routes>
-    </BrowserRouter>
+    <div className="flex justify-center">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/snake" element={<SnakeGame />}/>
+          <Route path="/tictactoe" element={<TicTacToe />}/>
+          <Route path="/rpsgame" element={<Rpsgame />}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
     
   )
 }
