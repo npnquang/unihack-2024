@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home/Home";
-import SnakeGame from "./components/snake/SnakeGame";
-import TicTacToe from "./components/tictactoe/TicTacToe";
+import SnakeGame from "./components/Snake/SnakeGame";
+import TicTacToe from "./components/TicTacToe/TicTacToe";
 import Rpsgame from "./components/rock-pap-sic/Rpsgame";
 const App = () => {
   return (
