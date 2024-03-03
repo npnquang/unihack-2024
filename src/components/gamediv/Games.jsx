@@ -20,10 +20,11 @@ const Data = [
   },
   {
     id: 3,
-    name: 'Puzzle Game',
+    name: 'Rock Paper Scissors',
     description: 'A simple game of tic tac toe',
     category: 'Entertainment, Puzzle',
     game_provider: 'arnav',
+    route: '/rpsgame'
   },
   {
     id: 4,
