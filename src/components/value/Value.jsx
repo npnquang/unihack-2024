@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoBulbSharp } from "react-icons/io5";
 import { SiDcentertainment } from "react-icons/si";
 import { IoCheckmarkSharp } from "react-icons/io5";
